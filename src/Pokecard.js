@@ -1,3 +1,4 @@
+import { getQueriesForElement } from '@testing-library/dom';
 import React, { Component } from 'react';
 import './Pokecard.css';
 

@@ -27,18 +27,28 @@ class Pokedex extends React.Component {
 
       return num;
     }
+
     return (
-      <div className="Pokedex">
-        {this.props.pokemon.map((poke) => (
-          <Pokecard
-            name={poke.name}
-            img={`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${leadingZeroNum(
-              poke.id
-            )}.png`}
-            type={poke.type}
-            exp={poke.base_experience}
-          />
-        ))}
+      <div>
+        <h2
+          className={this.props.isWinner ? 'Pokedex-winner' : 'Pokedex-loser'}
+        >
+          {this.props.isWinner ? 'WINNER!' : 'LOSER!'}
+        </h2>
+        <p className="Pokedex-game">Total Experience: {this.props.exp}</p>
+        <div className="Pokedex">
+          {this.props.pokemon.map((poke) => (
+            <Pokecard
+              key={poke.id}
+              name={poke.name}
+              img={`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${leadingZeroNum(
+                poke.id
+              )}.png`}
+              type={poke.type}
+              exp={poke.base_experience}
+            />
+          ))}
+        </div>
       </div>
     );
   }

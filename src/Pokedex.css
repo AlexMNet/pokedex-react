@@ -4,3 +4,16 @@
   justify-content: center;
   align-items: center;
 }
+
+.Pokedex-winner {
+  text-align: center;
+  color: green;
+}
+.Pokedex-loser {
+  text-align: center;
+  color: red;
+}
+
+.Pokedex-game {
+  text-align: center;
+}
