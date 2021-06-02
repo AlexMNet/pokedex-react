@@ -1,0 +1,25 @@
+.Pokecard {
+  background-color: rgb(211, 211, 211);
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin: 10px;
+  padding: 10px 16px;
+}
+
+.Pokecard-name {
+  color: rgb(44, 54, 247);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+}
+
+.Pokecard-img {
+  padding: 5px 15px;
+  object-fit: scale-down;
+}
+
+.Pokecard-stats {
+  margin: 0;
+}
